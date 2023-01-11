@@ -1,0 +1,21 @@
+{
+  "/rest": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/rest": ""
+    },
+    "timeout": 30000
+  },
+  "/picture": {
+    "target": "http://192.168.0.106/",
+    "secure": false,
+    "pathRewrite": {
+      "^/picture": ""
+    },
+    "changeOrigin": true,
+    "timeout": 30000
+  }
+}
